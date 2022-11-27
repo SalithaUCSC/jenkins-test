@@ -6,14 +6,14 @@ pipeline {
                 echo "init"
             }
         }
-        stage("build") {
-            steps {
-                echo "build"
-            }
-        }
         stage("test") {
             steps {
                 echo "test"
+            }
+        }
+        stage("build") {
+            steps {
+                echo "build"
             }
         }
         stage("deploy") {
